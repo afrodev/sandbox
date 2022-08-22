@@ -1,2 +1,3 @@
 # sandbox
-Testområde for skolen
+Testområde for skolen 
+lolllll fikk åpna filen

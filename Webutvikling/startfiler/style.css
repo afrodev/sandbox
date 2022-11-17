@@ -1,0 +1,67 @@
+#logo{
+    width: 100px;
+    height: auto;
+}
+
+#gridContainer{
+    display: grid;
+    grid-template-areas: "header header header" ". featured ." ". main ." "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-image: url("socks.jpg");
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+/*
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+*/
+header nav ul li{
+    display: inline-block;
+}
+
+.featured-items{
+    grid-area: featured;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+
+.featured-items h2 {
+    flex-basis: 100%;
+}
+
+.featured-items article{
+    flex-grow: 1;
+}
+/*
+.featured-items article img{
+    width: 100%;
+}
+*/
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between; */
+    gap: 1rem;
+}
+
+main article{
+    flex-grow: 1;
+
+}
+
+footer{
+    grid-area: footer;
+}
+

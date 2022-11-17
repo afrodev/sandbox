@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+header nav h3 {
+    float: left;
+}
+
+header nav ul{
+    float: right;
+}
+
+nav {
+    overflow: auto;
+    background-color: rgb(80, 139, 80);
+    padding: 1rem;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#front-page-container {
+    margin: 2rem 0;
+    max-width: 1200px;
+    width: 100%;
+    overflow: auto;
+}
+
+main {
+    width: 80%;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    float: left;
+}
+
+footer {
+    clear: both;
+}

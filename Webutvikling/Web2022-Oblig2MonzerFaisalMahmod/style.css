@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,500&display=swap');
+
+* {
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: /*#12A3B2 #127194 */ #0F9196;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+#gridContainer{
+    display: grid;
+    grid-template-areas: "header header header" "blog blog blog" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 650px 1fr 100px;
+}
+
+header{
+    grid-area: header;
+    background-image: url("Al-Darih-Toteel-16x9.jpg");
+    background-size: cover;
+    border-radius: 0px 0px 70px 70px;
+    height: 600px;
+}
+
+
+header nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-top: 5rem;
+}
+
+header nav h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    display: inline-block;  
+    padding: 1rem;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+header nav ul li a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-items{
+    grid-area: blog;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding-left: 15%;
+    padding-right: 15%;
+  /*justify-content: space-between;*/
+}
+
+.blog-items h2 {
+    flex-basis: 100%;
+}
+
+.blog-items article{
+    flex-grow: 1;
+}
+/*
+.blog-items article img{
+    width: 100%;
+}
+*/
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between; */
+    gap: 1rem;
+}
+
+main article{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 5px solid black;
+    align-items: center;
+    max-width: 15rem;
+    background-color: antiquewhite;
+}
+
+main article ul  {
+    text-decoration: none;
+    color: black;
+}
+
+main article p {
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+}
+
+main article a {
+    border: 5px solid black;
+    padding: 1rem;
+
+}
+
+main article a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.contactbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid black;
+    color: black;
+    background-color: antiquewhite;
+    padding: 4rem;
+    max-width: 15rem;;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+footer{
+    grid-area: footer;
+    background-color:antiquewhite ;
+    color: black;
+    padding: 5rem;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer ul li a:visited {
+    text-decoration: none;
+    color: black;
+}

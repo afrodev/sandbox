@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hvordan legge til Open Graph og Twitter Cards på en nettside</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a id="logo" href="artikkel_iten_OG-TC.html">WebDevs</a>
+
+        <nav role="navigation">
+            <a href="https://ogp.me/" target="_blank">Open Graph Protocol</a>
+            <a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards">Twitter Cards</a>
+        </nav>
+    </header>
+    <img id="illustration" src="img/illustration_1200px.jpg" alt="">
+    <main>
+        <h1>Hvordan legge til Open Graph og Twitter Cards på en nettside</h1>
+        <p class="ingress">For å gjøre nettsiden din mer attraktiv for deling i sosiale medier, kan du utnytte implementering av Open Graph og Twitter Cards i HTML-koden din. Mange <abbr title="Content Management Systems">CMS</abbr>-løsninger tilbyr dette automatisk, men det er nyttig å vite hvordan vi best utnytter dem i HTML-koden vår.</p>
+        <h2>Hva er Open Graph?</h2>
+        <p><a href="https://ogp.me/" target="_blank">Open Graph</a> er en api-løsning laget av <a href="https://developers.facebook.com/" target="_blank">Meta</a> (tidligere Facebook) for å registrere relasjons-informasjon om objecter. Med objecter menes mennesker, nettsider, applikasjoner og media som interagerer med hverandre. Et av de beste eksemplene vi stadig ser er når du (object menneske) trykker liker på en TV-series Facebook-side (object TV-serie), og får en annonse (object annonse) fra en bedrift (object bedrift) med tilbud på denne eller lignende TV-serier på Blu-Ray.</p>
+        <figure class="right-image">
+        <img src="img/opengraph.jpg" alt="Open Graph illustrert med bruker, action og object">
+        <figcaption>Illustrasjon av koblingene i Open Graph Network. Brukere utfører handlinger mot objecter, og relasjonene dem i mellom brukes for å finne og skape nye relasjoner - som igjen blir anbefalinger og annonser. Foto: Marius Akerbæk.</figcaption>
+        </figure>
+        <p>Man kan tenke på Open Graph som et nettverk av <a href="https://schema.org/" target="_blank">microdata</a> på internett, og ved å finne og utnytte disse koblingene kan man komme til nytt, interessant og relevant innhold. Å implementere Open Graph Tags gjør din nettside til et object som kan fungere som en del av dette relasjons-nettverket.</p>
+        <h2>Hva er Twitter Cards?</h2>
+        <p><a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards" target="_blank">Twitter Cards</a> ble utviklet av Twitter spesifikt for Twitter for å kunne forbedre deling av innhold på Twitter. Gjennom Twitter Cards blir innhold presentert mer lesbart og innbydende.</p>
+        <h2>Hva med andre sosiale medier?</h2>
+        <p>Fordi Facebook (Meta) og Twitter var tidligst ute og ble nærmest bransjestandard for implementeringen av denne typen meta-data, bruker de fleste andre sosiale medie-kanaler en av disse to teknologiene, eller standard HTML-meta-tager ala <code>&lt;title&gt;</code> og <code>&lt;description&gt;</code> for å hente fornuftig informasjon fra nettstedet når det deles.</p>
+        <h2>Hvordan bruke Open Graph og Twitter Cards?</h2>
+        <p>Det er heldigvis ganske enkelt! Jeg vil anbefale å lese <a href="https://www.everywheremarketer.com/blog/ultimate-guide-to-social-meta-tags-open-graph-and-twitter-cards" target="_blank">EverywhereMarketers Ultimate Guide to Social Media tags</a>. Her er ting enkelt forklart med fine praktiske eksempler.</p>
+    </main>
+    <footer>
+        <p>Webutvikling: Teknisk Sosiale Medier. Marius Akerbæk &copy; 2022</p>
+    </footer>
+</body>
+</html>

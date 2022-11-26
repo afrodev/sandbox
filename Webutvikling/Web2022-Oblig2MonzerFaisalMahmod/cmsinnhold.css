@@ -149,12 +149,37 @@ main article a:visited {
 #table{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.03fr 1fr 1fr 1fr 1fr;
     background-color: aliceblue;
+    border-left: 0.3rem solid #0F9196;
+    border-bottom: 0.3rem solid #0F9196;
+    border-right: 0.3rem solid #0F9196;
 }
 
 .table-head{
     background-color: #0F9196;
     color: aliceblue;
+}
+
+
+/* choosing to use specific border areas to avoid border on the top and have a nicer look*/
+.left-col{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.Leri-col{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.Rile-col{
+    border-right: 1px solid;
+     border-bottom: 1px solid;
+}
+
+.Right-col{
+    border-bottom: 1px solid;
 }
 
 .contactbutton {

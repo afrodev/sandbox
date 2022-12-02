@@ -8,7 +8,7 @@
     <meta property="og:title" content="Reisebloggen">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./Toteel-Palm-300.jpg">
-    <meta property="og:url" content="https://monzerfaisal.com/index"> <!--Denne linken er min, men ikke for eksamenen og er bare et eksempel. IRL skal det være unikt for hver side i nettsiden-->
+    <meta property="og:url" content="https://monzerfaisal.com/kontaktoss"> <!--Denne linken er min, men ikke for eksamenen og er bare et eksempel. IRL skal det være unikt for hver side i nettsiden-->
     <meta property="og:description" content="Eksamenen min">
     <!-- twitter integrasjon-->
     <meta name="twitter:card" content="summary">
@@ -21,7 +21,7 @@
     <link href="fonts/css/solid.css" rel="stylesheet">
     <title>Reisebloggen</title>
     <link rel="icon" type="image/x-icon" href="./icons/fire-solid.svg"> <!--icons from fontawesome free open source license-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="kontaktside.css">
 </head>
 <body>
     <!--Nettsidens hovedmeny-->
@@ -32,7 +32,7 @@
             <!--Logo er av Monzer Faisal-->
             <div class="sitename">
                 <h1>Reisebloggen</h1>
-            </div>
+            </div>            
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="uuseoinnhold.html">UU vs SEO</a></li>
@@ -42,37 +42,30 @@
             </ul>
         </nav>
     </header>
-        <!--Seksjon med diverse artikkler starter her-->
+        <!--Seksjon med featured starter-->
         <main class="blog-items">
-            <h2>Oppgaver</h2>
-            <article>
-                <img src="Nahla-Bee-K2-84-300.jpg" alt="placeholder for artikkelbilde" style="width: 100%;">
-                <h1>UU vs SEO</h1>
-                <p>
-                    Her forteller jeg om Universell utforming, Search Engine Optimizing og forholdet mellom de.
-                </p>
-                <a href="uuseoinnhold.html" class="product-button">Les Mer</a>
-            </article>
-            <article>
-                <img src="Monzer-truck-300.jpg" alt="placeholder for artikkelbilde" style="width: 100%;">
-                <h1>CMS</h1>
-                <p>
-                    Her forteller jeg om content managment systems og hva man bruker de for!
-
-                </p>
-                <a href="cmsinnhold.html" class="product-button">Les Mer</a>
-            </article>
-            <article>
-                <img src="Toteel-Palm-300.jpg" alt="placeholder for artikkelbilde" style="width: 100%;">
-                <h1>Analyse</h1>
-                <p>
-                    Alle har rom for forbedring (inkludert meg hvis du kan tro det!). Har forteller jeg hvordan jeg utviklet nettsiden med nye tiltak som jeg lærte underveis.
-
-                </p>
-                <a href="analyseinnhold.html" class="product-button">Les Mer</a>
-            </article>
-        <!--Seksjon med diverse artikkler starter her-->
-            <a href="kontaktside.html" class="contactbutton">Kontakt oss da!</a>            
+            <div id="front-page-container">
+                <h1>Kontakt oss nå!</h1>                
+                <article class="article-content">
+                    <h1>Fyll ut skjemaet</h1>
+                    <div class="schema">
+                        <form action="#">
+                      
+                          <label for="fname">Fornavn</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Ditt fornavn..">
+                      
+                          <label for="lname">Etternavn</label> <!-- jeg inkluderer labels fordi det er mer tilgjengelig-->
+                          <input type="text" id="lname" name="lastname" placeholder="Ditt etternavn..">
+                      
+                          <label for="subject">Subject</label>
+                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                      
+                          <input type="submit" value="Submit">
+                      
+                        </form>
+                      </div>
+                </article>
+            </div>
         </main>
     </div>
     <footer>

@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="cmsinnhold.css">
+    <!-- opengraph SoMe integrasjon-->
+    <meta property="og:title" content="Reisebloggen">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./Toteel-Palm-300.jpg">
+    <meta property="og:url" content="https://monzerfaisal.com/cms"> <!--Denne linken er min, men ikke for eksamenen og er bare et eksempel. IRL skal det være unikt for hver side i nettsiden-->
+    <meta property="og:description" content="Eksamenen min">
+    <!-- twitter integrasjon-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Reisebloggen">
+    <meta name="twitter:image" content="./Toteel-Palm-300.jpg">
+    <meta name="description" content="Eksamenen min">
     
     <link href="fonts/css/fontawesome.css" rel="stylesheet">
     <link href="fonts/css/brands.css" rel="stylesheet">
     <link href="fonts/css/solid.css" rel="stylesheet">
-    <title>Reiseblogg</title>
+    <title>Reisebloggen</title>
+    <link rel="icon" type="image/x-icon" href="./icons/fire-solid.svg"> <!--icons from fontawesome free open source license-->
+    <link rel="stylesheet" type="text/css" href="cmsinnhold.css">
 </head>
 <body>
     <!--Nettsidens hovedmeny-->
@@ -25,17 +37,17 @@
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="uuseoinnhold.html">UU vs SEO</a></li>
                 <li><a href="cmsinnhold.html">CMS</a></li>
-                <li><a href="innholdsmal.html">Analyse</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="analyseinnhold.html">Analyse</a></li>
+                <li><a href="kontaktside.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
         <!--Seksjon med featured starter-->
         <main class="blog-items">
             <div id="front-page-container">
-                <h1>CMS</h2>                
+                <h1>CMS</h1>                
                 <article class="article-content">
-                    <h1>Hva er forskjellen mellom headless og seamless CMS?</h1>
+                    <h2>Hva er forskjellen mellom headless og seamless CMS?</h2>
                     <p>Et “headless CMS” tillater deg å bruke nettsiden din på alle mulige måter og enheter. Den gjør funksjonaliteten, altså backend til nettsiden tilgjengelig som en fullstendig webapp gjennom en API slik at utviklere og 
                         innholdsprodusentene kan lage frontend og innholdet til siden. Man kan tenke på backend som en bilmotor og
                          frontend som karosseriet og rattet. På den måten er headless systemet en motor som kan “kobles” til hvilken som helst bil uansett design, form og innhold. Dette er et system som gir stor 
@@ -47,6 +59,26 @@
                         på en skikkelig effektiv måte men er brukervennlig for bedrifter og personer som skal drive en enkel statisk nettside.</p>
                     <p>Nedsiden er at den kan være treg eller ubrukelig for moderne behov som kompliserte nettbutikker. Backenden er lite fleksibel, men det kan være både positivt og negativt. 
                         Positivt fordi det kan være alt du trenger og negativt fordi det ikke alltid dekker ditt behov. Her er en tabell med fordeler og ulemper</p>
+                        <p></p>
+                        <h2>Forskjellige TYPER CMS</h2>
+
+                        <h3>Component Content Management System (CCMS)</h3>
+                        <p>Et komponentinnholdsstyringssystem, eller CCMS, skiller seg fra et standard CMS ved at det organiserer innhold på en veldig detaljert måte. I stedet for å ta for seg innhold side for side, tar den ord, setninger, avsnitt eller bilder (også kjent som "komponenter") og lagrer dem sentralt, på samme måte som man lagrer en variabel i programmering</p>
+                        <p>Komponentene er designet for maksimal gjenbruk av innhold, og lagres kun én gang. CCMS blir beregnet som en pålitelig kilde som publiserer innhold på tvers av flere plattformer, inkludert mobil, PDF og print siden du kan plukke nøyaktig det du trenger hver gang. Eksempel på dette er Overleaf Latex programvare</p>
+
+                        <h3>Document Management System (DMS)</h3>
+                        <p>Sporing av bedriftssdokumenter på papir hører fortiden til. Document Management Systems (DMS) gir en papirløs løsning for administrasjon, lagring og sporing av dokumenter i skyen. Det gir en automatisert løsning for å laste opp, behandle og dele bedriftsdokumenter uten å skrive ut, kopiere eller skanne. Eksempler på dette er Google Docs eller Microsoft Word.</p>
+                        
+                        <h3>Enterprise Content Management System (ECM)</h3>
+                        <p>Et innholdsstyringssystem for bedrifter samler inn, organiserer og leverer en organisasjons dokumenter, og sikrer at kritisk informasjon leveres til riktig publikum (ansatte, kunder, forretningsinteressenter, etc.)</p>
+                        <p>ECM gjør det enkelt for alle medlemmer av en organisasjon å få tilgang til innholdet de trenger for å fullføre prosjekter og ta viktige beslutninger. I tillegg sletter ECM filer etter en viss oppbevaringsperiode, og sikrer at uønsket innhold ikke tar opp plass. ECM sparer lagringskostnader ved å lagre bare nødvendige filer og slette resten.</p>
+                        
+                        <h3>Web Content Management System (WCMS)</h3>
+                        <p>Det er CMS typen jeg dekket allerede øverst. I tillegg til forskjellen mellom “headless” og “seamless” CMS, finnes det forskjeller mellom kode-krevende CMS og de som ikke trenger noe kode. Løsningen du velger vil avgjøre hvor mye teknisk kunnskap som kreves for å bygge, administrere og tilpasse nettstedet ditt. WordPress, Joomla og Drupal er eksempler på populære kodesystemer, noe som betyr at du må kjenne til minst grunnleggende kodeferdigheter (som HTML, CSS og PHP) for å være “hoste”, bygge og tilpasse et nettsted selv.</p>
+                        <p>No-code systemer som Squarespace og Wix er mye enklere å bruke. Sidebyggerverktøy, maler og forhåndslagde innholdsblokker er tilgjengelige for å hjelpe deg med å lage et nettsted i et visuelt temaredigeringsprogram. Dette lar deg se nøyaktig hvordan endringer på nettstedet ditt vil se ut før du publiserer eller oppdaterer en side, slik at du kan lage et fullt funksjonelt nettsted med profesjonelt utseende uten koding eller teknisk kunnskap.</p>
+
+                        <h3>Digital Asset Management System (DAM)</h3>
+                        <p>Med en digital asset managment program kan en enkelt lagre, organisere og dele digitalt innhold som  lyd, foto, digital kunst, video, dokumenter og presentasjoner. . En DAM er et sentralisert bibliotek der kunder, ansatte kan få eller miste tilgang til digitalt innhold. Eksempler på dette er Bynder og Monday.com</p>
                 <section>
                     <div id="table">
                         <div class="table-head"><h4>Navn</h3> </div>
@@ -57,7 +89,7 @@
                         <div class="left-col">Wordpress</div>
                         <div class="Leri-col">Enkel. Gratis eller i verste fall billig. Rask å sette opp. Kan fungere som headless hvis man setter det opp slik. Mye support på nett og mange plugins!</div>
                         <div class="Rile-col">Gammel og "clunky" design. Krever masse tid hvis det er din første gang</div>
-                        <div class="Right-col">Alt right</div>
+                        <div class="Right-col"><span>Alt right</span></div>
 
                         <div class="left-col">Shopify</div>
                         <div class="Leri-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu enim at lectus rutrum vehicula quis blandit nisi. Maecenas fermentum erat quis nisl faucibus, sit amet blandit tortor maximus.</div>
@@ -75,6 +107,20 @@
                         <div class="Right-col">Alt right</div>
                     </div>
                 </section>
+                <p></p>
+                <h2>Kilder</h2>
+                <ul>
+                    <li><a href="https://www.ixiasoft.com/types-of-content-management-systems/">5 Types of Content Management Systems (CMS), Jones. Hentet 01.12.2022</a></li>
+                    <li><a href="https://www.squarespace.com/website-design">Squarespace. Hentet 01.12.2022</a></li>
+                    <li><a href="https://www.shopify.com/tour/ecommerce-cms">Shopify. Hentet 01.12.2022</a></li>
+                    <li><a href="https://strapi.io/blog/traditional-vs-headless-cms-a-comparison?utm_source=devto&utm_medium=post&utm_campaign=blog">Strapi: Traditional vs Headless CMS: A Comparison. Hentet 01.12.2022</a></li>
+                    <li><a href="">asdasdasd</a></li>
+                    <li><a href="">asdasdasd</a></li>
+                    <li><a href="">asdasdasd</a></li>
+                    <li><a href="">asdasdasd</a></li>
+                    <li><a href="">asdasdasd</a></li>
+
+                </ul>
 
                 </article>
                 
@@ -88,9 +134,12 @@
             <li><a href="index.html">Hjem</a></li>
             <li><a href="uuseoinnhold.html">UU vs SEO</a></li>
             <li><a href="cmsinnhold.html">CMS</a></li>
-            <li><a href="innholdsmal.html">Analyse</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
+            <li><a href="analyseinnhold.html">Analyse</a></li>
+            <li><a href="kontaktside.html">Kontakt</a></li>
+            <li><a href="www.facebook.com">Our Facebook<img src="icons/facebook.svg" alt="Facebook logo"></a></li><!--icons from fontawesome free open source license-->
+            <li><a href="www.twitter.com">Our Twitter<img src="icons/twitter.svg" alt="Twitter logo"></a></li><!--icons from fontawesome free open source license-->
+            <li><a href="www.pinterest.com">Our pinterest<img src="icons/pinterest.svg" alt="Pinterest logo"></a></li><!--icons from fontawesome free open source license-->
+        </ul> 
     </footer>
 </body>
 </html>

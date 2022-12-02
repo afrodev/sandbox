@@ -70,12 +70,6 @@ header nav{
 }
 /*1: MUST COPY TO ALL PAGES TO HERE*/
 
-header nav h1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 header nav ul li{
     display: inline-block;  
     padding: 1rem;
@@ -86,6 +80,7 @@ header nav ul li a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    color: black;
 }
 
 header nav ul li a:visited {
@@ -98,8 +93,8 @@ header nav ul li a:visited {
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 0%;
   /*justify-content: space-between;*/
 }
 
@@ -110,17 +105,76 @@ header nav ul li a:visited {
 .blog-items article{
     flex-grow: 1;
 }
-/*
-.blog-items article img{
-    width: 100%;
-}
-*/
 
+
+#front-page-container{
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+    width: 100%;
+    overflow: auto;
+}
+
+main{
+    width: 80%;
+    float: left;
+}
+
+
+.article-content{
+    width: 90%;
+    float: left;
+}
+
+/* IMPORTANT FOR IMAGE FIT IN ARTICLES NO MATTER SIZE OR SCREEN*/
+article > img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.schema {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 1rem; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 0.5rem; 
+    margin-bottom: 1rem; 
+    resize: vertical 
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem; 
+  }
+
+main article{
+    max-width: 100%;
+    width: 100%;
+    float: left;
+    border: 1px solid #d9d9d9;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: antiquewhite;
+}
+
+/*
 main{
     grid-area: main;
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-between; */
+    /*justify-content: space-between; *//*
     gap: 1rem;
 }
 
@@ -139,10 +193,10 @@ main article ul  {
     text-decoration: none;
     color: black;
 }
-
+*/
 main article p {
     font-family: 'Roboto', sans-serif;
-    padding: 1rem;
+    padding: 1rem 0rem;
 }
 
 main article a {
@@ -169,8 +223,6 @@ main article a:visited {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
-
-/*kopier dette og ned til alle css sidene*/
 
 footer{
     grid-area: footer;

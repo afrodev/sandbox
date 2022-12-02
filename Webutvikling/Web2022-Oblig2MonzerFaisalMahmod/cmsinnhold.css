@@ -171,17 +171,22 @@ main article p {
     font-family: 'Roboto', sans-serif;
     padding: 1rem 0rem;
 }
-
+/* only for index
 main article a {
     border: 5px solid black;
     padding: 1rem;
 
-}
+}*/
 
 main article a:visited {
     text-decoration: none;
     color: black;
 }
+
+@media only screen and (min-width: 650px){
+
+}
+
 
 #table{
     display: grid;
@@ -191,6 +196,13 @@ main article a:visited {
     border-left: 0.3rem solid #0F9196;
     border-bottom: 0.3rem solid #0F9196;
     border-right: 0.3rem solid #0F9196;
+    max-width: 100%;
+    width: max-content;
+    word-wrap: break-word;
+}
+
+#table span{
+    word-wrap: break-all;
 }
 
 .table-head{
@@ -238,6 +250,7 @@ footer{
     background-color:antiquewhite ;
     color: black;
     padding: 5rem;
+    border-radius: 30px 30px 0 0;
 }
 
 footer ul li {
@@ -248,8 +261,21 @@ footer ul li {
     font-family: 'Roboto', sans-serif;
 }
 
+footer ul li img{
+    width: 40px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
 
 footer ul li a:visited {
     text-decoration: none;
-    color: black;
+    color: none;
+}
+
+a:hover {
+    color: #0F9196;
+    text-decoration: underline;
 }

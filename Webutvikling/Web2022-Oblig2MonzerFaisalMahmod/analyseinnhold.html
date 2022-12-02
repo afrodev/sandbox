@@ -8,7 +8,7 @@
     <meta property="og:title" content="Reisebloggen">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./Toteel-Palm-300.jpg">
-    <meta property="og:url" content="https://monzerfaisal.com/index"> <!--Denne linken er min, men ikke for eksamenen og er bare et eksempel. IRL skal det være unikt for hver side i nettsiden-->
+    <meta property="og:url" content="https://monzerfaisal.com/analyse"> <!--Denne linken er min, men ikke for eksamenen og er bare et eksempel. IRL skal det være unikt for hver side i nettsiden-->
     <meta property="og:description" content="Eksamenen min">
     <!-- twitter integrasjon-->
     <meta name="twitter:card" content="summary">
@@ -21,7 +21,7 @@
     <link href="fonts/css/solid.css" rel="stylesheet">
     <title>Reisebloggen</title>
     <link rel="icon" type="image/x-icon" href="./icons/fire-solid.svg"> <!--icons from fontawesome free open source license-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="uuseoinnhold.css">
 </head>
 <body>
     <!--Nettsidens hovedmeny-->
@@ -32,7 +32,7 @@
             <!--Logo er av Monzer Faisal-->
             <div class="sitename">
                 <h1>Reisebloggen</h1>
-            </div>
+            </div>            
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="uuseoinnhold.html">UU vs SEO</a></li>
@@ -42,37 +42,22 @@
             </ul>
         </nav>
     </header>
-        <!--Seksjon med diverse artikkler starter her-->
+        <!--Seksjon med featured starter-->
         <main class="blog-items">
-            <h2>Oppgaver</h2>
-            <article>
-                <img src="Nahla-Bee-K2-84-300.jpg" alt="placeholder for artikkelbilde" style="width: 100%;">
-                <h1>UU vs SEO</h1>
-                <p>
-                    Her forteller jeg om Universell utforming, Search Engine Optimizing og forholdet mellom de.
-                </p>
-                <a href="uuseoinnhold.html" class="product-button">Les Mer</a>
-            </article>
-            <article>
-                <img src="Monzer-truck-300.jpg" alt="placeholder for artikkelbilde" style="width: 100%;">
-                <h1>CMS</h1>
-                <p>
-                    Her forteller jeg om content managment systems og hva man bruker de for!
-
-                </p>
-                <a href="cmsinnhold.html" class="product-button">Les Mer</a>
-            </article>
-            <article>
-                <img src="Toteel-Palm-300.jpg" alt="placeholder for artikkelbilde" style="width: 100%;">
-                <h1>Analyse</h1>
-                <p>
-                    Alle har rom for forbedring (inkludert meg hvis du kan tro det!). Har forteller jeg hvordan jeg utviklet nettsiden med nye tiltak som jeg lærte underveis.
-
-                </p>
-                <a href="analyseinnhold.html" class="product-button">Les Mer</a>
-            </article>
-        <!--Seksjon med diverse artikkler starter her-->
-            <a href="kontaktside.html" class="contactbutton">Kontakt oss da!</a>            
+            <div id="front-page-container">
+                <h1>Analyse siden</h1>                
+                <article class="article-content">
+                    <h1>Hvor startet jeg?</h1>
+                    <p>Universell utforming er et prinsipp i design av bygninger, maskiner, veier, steder, fysiske og digitale produkter som går ut på at flest mulig 
+                        skal kunne bruke de. Man kan gjøre det mulig for de fleste å bruke sin side ved å blant annet fylle ut “alt data” i sin HTML som at < table > bør 
+                        alltid ha < caption > for en beskrivelse av tabellen og aldri tomme headere (< th >). Man bør også bruke ting som mikrodata for å fortelle at dette 
+                        objektet er et bilde, tabell, video, oppskrift eller mer.</p> 
+                    <img src="analyse-1.JPG" alt="placeholder artikkelbilde">
+                    <p>Denne informasjonen hjelper tekstlesere og andre hjelpemidler som personer med nedsatte funksjoner bruker samtidig som den hjelper nettsiden din være
+                         mer synlig på søkemotorer fordi Google verdsetter og stoler mer mikrodata enn kun text.</p>
+                    <p></p>
+                </article>
+            </div>
         </main>
     </div>
     <footer>

@@ -10,6 +10,22 @@ body{
     background-color: /*#12A3B2 #127194 */ #0F9196;
 }
 
+/*1: MUST COPY TO ALL PAGES FROM HERE*/
+@media only screen and (max-width: 768px){
+	html, body{
+	width:100%;
+	overflow-x:hidden;
+	}
+
+}
+
+@media only screen and (min-width: 250px){
+	html, body{
+	width:100%;
+	overflow-x:hidden;
+	}
+}
+
 .logo{
     width: 100px;
     height: auto;
@@ -30,14 +46,29 @@ header{
     height: 600px;
 }
 
-
+/*THIS MAKE MENU PADDING RIGHT ON MOBILE AND GENERALLY CENTERED*/
 header nav{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 1rem;
+    justify-content: center;
+    padding: 5rem;
     padding-top: 5rem;
 }
+
+@media only screen and (min-width: 650px){
+    header nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+        padding-top: 9rem;
+    }
+}
+/*1: MUST COPY TO ALL PAGES TO HERE*/
 
 header nav ul li{
     display: inline-block;  
@@ -62,7 +93,7 @@ header nav ul li a:visited {
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    padding-left: 15%;
+    padding-left: 10%;
     padding-right: 0%;
   /*justify-content: space-between;*/
 }
@@ -91,8 +122,14 @@ main{
 
 
 .article-content{
-    width: 80%;
+    width: 90%;
     float: left;
+}
+
+/* IMPORTANT FOR IMAGE FIT IN ARTICLES NO MATTER SIZE OR SCREEN*/
+article > img{
+    max-width: 100%;
+    object-fit: cover;
 }
 
 main article{

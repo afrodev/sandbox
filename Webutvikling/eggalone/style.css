@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: Helvetica, sans-serif; */
+    background-color: #020B22;
+    color: gainsboro;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    padding: 5vh;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  /*padding-left: 1rem;
+    padding-top: 5rem; for nav with multiple buttons*/
+}
+
+header nav ul li{
+    display: inline-block;  
+    padding: 1rem;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    height: 40vh;
+}
+
+.section1 {
+    color: #020B22;
+    background-color: bisque;
+}
+
+.section2 {
+    color: #020B22;
+    background-color: tomato;
+}
+
+main article{
+    max-width: 100%;
+    width: 100%;
+    float: left;
+    border: 1px solid #d9d9d9;
+    margin-top: 1rem;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+.article-content {
+    width: 90%;
+}
+
+footer {
+    height: 30vh;
+}
